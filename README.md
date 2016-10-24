@@ -4,7 +4,7 @@ This tool was developed, as an example, for monitoring any geo-replicated databa
 
     servername.database.windows.net_databasename_YYYYMMDDHHNNSS_title_of_query.json
 
-How to parametrize this tool?
+##How to parametrize this tool?
 
   ++ $server is an array for the servers that you want to monitor.
   ++ $databaseDBUser is an array for the user databases that you want to obtain the details.
@@ -17,7 +17,7 @@ How to parametrize this tool?
   ++ $QueriesDBUser is an array for every TSQL/query that you want to execute for every user database.
   ++ $QueriesDBMaster is an array for every TSQL/query that you want to execute in the master database for every server.
 
-How to analyze the data?
+###How to analyze the data?
 
   ++ Once you have the JSON file, 
   
