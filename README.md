@@ -6,7 +6,7 @@ This tool was developed, as an example, for monitoring any geo-replicated databa
 
 ##How to parametrize this tool?
 
-  - $server is an array for the servers that you want to monitor.
+  - *$server* is an array for the servers that you want to monitor.
   - $databaseDBUser is an array for the user databases that you want to obtain the details.
   - $databaseDBUser[x], you need to specify the user database name per server. Every x represent a server that correspond with $server.
   - $user is an array for the user name for every server that you want to connect.
