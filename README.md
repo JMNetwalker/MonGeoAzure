@@ -20,16 +20,16 @@ This tool was developed, as an example, for monitoring any geo-replicated databa
 ##How to analyze the data?
 
   - Once you have the JSON file, 
-  
-         > SELECT book.* FROM OPENROWSET (BULK '<folder>\servername.database.windows.net_database_YYYYMMDDHHNNSS_ResourceDB.json', 
-         > SINGLE_cLOB) as j CROSS APPLY OPENJSON(BulkColumn)
-         > WITH( [end_time] datetime ,       
-              [avg_cpu_percent] [decimal](5, 2),       
-              [avg_data_io_percent] [decimal](5, 2) ,       
-              [avg_log_write_percent] [decimal](5, 2) ,       
-              [avg_memory_usage_percent] [decimal](5, 2),       
-              [xtp_storage_percent] [decimal](5, 2),        
-              [max_worker_percent] [decimal](5, 2) ,       
-              [max_session_percent] [decimal](5, 2) ,       
-              [dtu_limit] [int] ) AS book
-         
+  ```
+     SELECT book.* FROM OPENROWSET (BULK '<folder>\servername.database.windows.net_database_YYYYMMDDHHNNSS_ResourceDB.json', 
+     SINGLE_cLOB) as j CROSS APPLY OPENJSON(BulkColumn)
+     WITH( [end_time] datetime ,       
+           [avg_cpu_percent] [decimal](5, 2),       
+           [avg_data_io_percent] [decimal](5, 2) ,       
+           [avg_log_write_percent] [decimal](5, 2) ,       
+           [avg_memory_usage_percent] [decimal](5, 2),       
+           [xtp_storage_percent] [decimal](5, 2),        
+           [max_worker_percent] [decimal](5, 2) ,       
+           [max_session_percent] [decimal](5, 2) ,       
+           [dtu_limit] [int] ) AS book
+     ```    
