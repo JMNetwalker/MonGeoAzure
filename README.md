@@ -21,7 +21,7 @@ This tool was developed, as an example, for monitoring any geo-replicated databa
 
   - Once you have the JSON file, 
   
-        SELECT book.* FROM OPENROWSET (BULK '<folder>\servername.database.windows.net_database_YYYYMMDDHHNNSS_ResourceDB.json', 
+        ```SELECT book.* FROM OPENROWSET (BULK '<folder>\servername.database.windows.net_database_YYYYMMDDHHNNSS_ResourceDB.json', 
         SINGLE_cLOB) as j CROSS APPLY OPENJSON(BulkColumn)
         WITH( [end_time] datetime ,       
               [avg_cpu_percent] [decimal](5, 2),       
