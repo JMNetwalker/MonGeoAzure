@@ -14,8 +14,8 @@ This tool was developed, as an example, for monitoring any geo-replicated databa
   ++ $filesDbUser is an array with the name of the files that will be generated for every user query that you want to execute, correspond every query that you have configured in $QueriesDBUser.
   ++ $filesDbMaster is an array with the name of the files that will be generated for every server from the master database, correspond
                   everu query that you have configured in $QueriesDBMaster
-  ++ $QueriesDBUser is an array for every TSQL/query that you want to execute for every user database.
-  ++ $QueriesDBMaster is an array for every TSQL/query that you want to execute in the master database for every server.
+  - $QueriesDBUser is an array for every TSQL/query that you want to execute for every user database.
+  - $QueriesDBMaster is an array for every TSQL/query that you want to execute in the master database for every server.
 
 ##How to analyze the data?
 
