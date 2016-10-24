@@ -17,7 +17,7 @@ This tool was developed, as an example, for monitoring any geo-replicated databa
   ++ $QueriesDBUser is an array for every TSQL/query that you want to execute for every user database.
   ++ $QueriesDBMaster is an array for every TSQL/query that you want to execute in the master database for every server.
 
-###How to analyze the data?
+##How to analyze the data?
 
   ++ Once you have the JSON file, 
   
