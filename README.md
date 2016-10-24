@@ -1,6 +1,6 @@
 # MonGeoAzure
 
-This tool was developed, as an example, for monitoring any geo-replicated database(s) and server(s) in Azure SQL Database. Every time that you executed this PowerShell command you will have a JSON file in the following format: 
+This tool was developed, as an example, for monitoring any geo-replicated database(s) and server(s) in Azure SQL Database. Every time that you executed this PowerShell command you will have a JSON file in the following format for every server, database, query for user database (or query master database) and YYYYMMDDHHNNSS.
 
     servername.database.windows.net_databasename_YYYYMMDDHHNNSS_title_of_query.json
 
