@@ -11,8 +11,7 @@ How to parametrize this tool?
   ++ $databaseDBUser[x], you need to specify the user database name per server. Every x represent a server that correspond with $server.
   ++ $user is an array for the user name for every server that you want to connect.
   ++ $password is an array for the password for every user name for every server that you want to connect.
-  ++ $filesDbUser is an array with the name of the files that will be generated for every user query that you want to execute, correspond 
-                  every query that you have configured in $QueriesDBUser.
+  ++ $filesDbUser is an array with the name of the files that will be generated for every user query that you want to execute, correspond every query that you have configured in $QueriesDBUser.
   ++ $filesDbMaster is an array with the name of the files that will be generated for every server from the master database, correspond
                   everu query that you have configured in $QueriesDBMaster
   ++ $QueriesDBUser is an array for every TSQL/query that you want to execute for every user database.
